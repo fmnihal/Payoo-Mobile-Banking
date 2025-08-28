@@ -12,7 +12,7 @@ document.getElementById('btn-login').addEventListener('click', function(event){
     const pinConverted2Int= parseInt(pinValue);
 
     console.log(mobileNumvertedConverted2Int, pinConverted2Int);
-    if (mobileNumvertedConverted2Int==mobileNumber && pinConverted2Int==pin){
+    if (mobileNumvertedConverted2Int===mobileNumber && pinConverted2Int===pin){
         // console.log('All values matched');
         window.location.href='./home.html';
     } else {
